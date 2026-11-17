@@ -21,6 +21,6 @@ while True:
             json.dump(vault, open(FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
             print("삭제되었습니다.")
         else:
-            print("해당 사이트가 존재하지 않습니다.")
+            print("해당 사이트가 존재하지 않습니다.!")
     elif cmd == "4":
         break
