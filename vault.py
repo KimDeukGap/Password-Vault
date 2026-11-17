@@ -8,7 +8,7 @@ while True:
     cmd = input("선택: ")
     
     if cmd == "1":
-        print("\n".join(f"- 사이트: {k} | 아이디/비번: {v}" for k, v in vault.items()) or "저장된 계정이 없습니다.")
+        
     elif cmd == "2":
         site = input("사이트/서비스 이름: ")
         info = input("아이디/비밀번호 정보: ")
