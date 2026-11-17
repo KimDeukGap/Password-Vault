@@ -13,7 +13,8 @@ while True:
         site = input("사이트/서비스 이름: ")
         info = input("아이디/비밀번호 정보: ")
         vault[site] = info
-        
+        json.dump(vault, open(FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        print("저장되었습니다.")
     elif cmd == "3":
         site = input("삭제할 사이트 이름: ")
          vault.pop(site, None):
